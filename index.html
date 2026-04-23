@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Halaman Foto Berwarna</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradientAnim 10s ease infinite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        @keyframes gradientAnim {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Kontainer untuk menumpuk teks dan foto secara vertikal */
+        .container {
+            text-align: center;
+            width: 100%;
+        }
+
+        .kata-kata {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px; /* Jarak antara teks dan foto */
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); /* Biar teks mudah dibaca */
+            padding: 0 20px;
+        }
+
+        .foto-saya {
+            width: 85%;
+            max-width: 400px;
+            border-radius: 20px; 
+            border: 5px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="kata-kata">web .... sorry ye ✨</div>
+        
+        <img src="aib opet.jpeg" alt="Foto" class="foto-saya">
+    </div>
+
+</body>
+</html>
